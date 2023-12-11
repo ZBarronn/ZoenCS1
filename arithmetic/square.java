@@ -2,7 +2,7 @@ class square
 {
     public static void main (String args[])
     {
-        int num1 = 3;
-        System.out.print(num1 * num1);
+        int num = 3;
+        System.out.print(num * num);
     }
 }
