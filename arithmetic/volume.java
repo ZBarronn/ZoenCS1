@@ -9,7 +9,7 @@ class volume
         double num = ((pi* square) * height);
         double num2 = ((2 * pi) * radius);
         double surfaceArea = (num2 * (radius + height));
-
+        
         System.out.print("the volume is " + num + " and the surface area is " + surfaceArea + ".");
 
     }
