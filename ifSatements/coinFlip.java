@@ -5,8 +5,8 @@ class coinFlip
     public static void main (String args[])
     {
         Random rand = new Random();
-        int n = rand.nextInt(2);
-        if(n == 1)
+        int num = rand.nextInt(2);
+        if(num == 0)
         {
             System.out.print("heads");
         }
