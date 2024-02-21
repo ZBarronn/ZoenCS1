@@ -15,5 +15,6 @@ class factorial {
         }
 
         System.out.println("The factorial of " + num + " is " + num3);
+        numScanner.close();
     }
 }
