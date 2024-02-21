@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-class factorial {
-    public static void main(String args[]) {
+class factorial 
+{
+    public static void main(String args[]) 
+    {
         Scanner numScanner = new Scanner(System.in);
 
         System.out.print("Please enter a number: ");
@@ -9,7 +11,8 @@ class factorial {
         int num2 = 1;
         int num3 = 1;
 
-        while (num2 <= num) {
+        while (num2 <= num) 
+        {
             num3 *= num2;
             num2++;
         }
