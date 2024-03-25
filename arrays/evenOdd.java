@@ -7,7 +7,7 @@ public class evenOdd
     }
 
     public static void countEvenOdd(int[] array) 
-    {
+        {
         if (array.length == 0) 
         {
             System.out.println("Array is empty.");
