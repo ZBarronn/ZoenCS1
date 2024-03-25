@@ -2,7 +2,7 @@ public class evenOdd
 {
     public static void main(String[] args) 
     {
-        int[] array = {5, 3, 9, 12, 7, 8, 6};
+        int[] array = {5, 3, 9, 12, 7, 8, 6, 4};
         countEvenOdd(array);
     }
 
