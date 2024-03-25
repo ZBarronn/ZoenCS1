@@ -5,28 +5,57 @@ public class dupliVal
     public static void main(String[] args) 
     {
         Scanner scanner = new Scanner(System.in);
-        int[] values = new int[25];
-        int size = 0;
 
         System.out.println("Enter 25 values:");
-        while (size < 25) 
+
+        int[] values = new int[25];
+        boolean hasDuplicates = false;
+        int firstDuplicate = -1;
+
+        for (int i = 0; i < 25; i++) 
         {
+            System.out.print("Enter a value: ");
             int input = scanner.nextInt();
+
             if (input == -1) 
             {
                 break;
             }
-            for (int i = 0; i < size; i++) 
+
+            if (isDuplicate(values, i, input)) 
             {
-                if (values[i] == input) 
+                hasDuplicates = true;
+                if (firstDuplicate == -1) 
                 {
-                    System.out.println("Duplicate was found: " + input);
-                    return;
+                    firstDuplicate = input;
                 }
+            } else 
+            {
+                values[i] = input;
             }
-            values[size++] = input;
+            
+            scanner.nextLine();
         }
 
-        System.out.println("No duplicates were found.");
+        if (hasDuplicates) 
+        {
+            System.out.println("Duplicates were found");
+            System.out.println("The first duplicate is: " + firstDuplicate);
+        } else 
+        {
+            System.out.println("No duplicates found.");
+        }
+    }
+
+    private static boolean isDuplicate(int[] array, int count, int value) 
+    {
+        for (int i = 0; i < count; i++) 
+        {
+            if (array[i] == value) 
+            {
+                return true; 
+            }
+        }
+        return false;
     }
 }
