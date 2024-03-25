@@ -3,10 +3,10 @@ public class evenOdd
     public static void main(String[] args) 
     {
         int[] array = {5, 3, 9, 12, 7, 8, 6};
-        countAndPrintEvenOdd(array);
+        countEvenOdd(array);
     }
 
-    public static void countAndPrintEvenOdd(int[] array) 
+    public static void countEvenOdd(int[] array) 
     {
         if (array.length == 0) 
         {
