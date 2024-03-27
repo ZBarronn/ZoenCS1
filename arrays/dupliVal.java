@@ -4,7 +4,7 @@ public class dupliVal
 {
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner numScanner = new Scanner(System.in);
 
         System.out.println("Enter 25 values:");
 
@@ -15,7 +15,7 @@ public class dupliVal
         for (int i = 0; i < 25; i++) 
         {
             System.out.print("Enter a value: ");
-            int input = scanner.nextInt();
+            int input = numScanner.nextInt();
 
             if (input == -1) 
             {
@@ -34,7 +34,7 @@ public class dupliVal
                 values[i] = input;
             }
             
-            scanner.nextLine();
+            numScanner.nextLine();
         }
 
         if (hasDuplicates) 
